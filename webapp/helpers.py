@@ -27,7 +27,19 @@ def parse_bank_statement(
             if cropbox := bank.pdf_config.page_bbox:
                 for page in parser.document:
                     page.set_cropbox(cropbox)
-                parser.document = parser.apply_ocr(document)
+
+            parser.document = parser.apply_ocr(document)
+            parser.document.save("dummy.pdf")
+
+    with open("dummy.pdf", "rb") as pdf_file:
+        PDFbyte = pdf_file.read()
+
+    st.download_button(
+        label="Export_Report",
+        data=PDFbyte,
+        file_name="test.pdf",
+        mime="application/octet-stream",
+    )
 
     pipeline = Pipeline(parser, passwords=[SecretStr(password)])
 
