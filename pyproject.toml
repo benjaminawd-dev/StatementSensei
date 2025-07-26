@@ -10,10 +10,10 @@ dependencies = [
     "plotly>=6.1.2",
     "pdftotext>=3.0.0",
     "pymupdf>=1.26.0",
-    "monopoly-core==0.18.4",
+    "monopoly-core",
 ]
 name = "statement-sensei"
-version = "0.9.7"
+version = "0.9.8rc2"
 description = "PDF to CSV conversion for your bank statements"
 readme = "README.md"
 
@@ -82,3 +82,6 @@ ignore = [
     "N999",
     "SLF001"
 ]
+
+[tool.uv.sources]
+monopoly-core = { git = "https://github.com/benjamin-awd/monopoly", branch = "add-posb-historical" }
