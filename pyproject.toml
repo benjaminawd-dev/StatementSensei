@@ -84,4 +84,4 @@ ignore = [
 ]
 
 [tool.uv.sources]
-monopoly-core = { git = "https://github.com/benjamin-awd/monopoly", branch = "add-posb-historical" }
+monopoly-core = { git = "https://github.com/benjamin-awd/monopoly", rev = "4d45bbfe8eb82a673eafdd0fa25b6147b7eed17f" }

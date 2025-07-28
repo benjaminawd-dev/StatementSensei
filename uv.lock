@@ -599,7 +599,7 @@ wheels = [
 [[package]]
 name = "monopoly-core"
 version = "0.18.4"
-source = { git = "https://github.com/benjamin-awd/monopoly?branch=add-posb-historical#e9e62a061044934f5a0a89315eb93714c97d923d" }
+source = { git = "https://github.com/benjamin-awd/monopoly?rev=4d45bbfe8eb82a673eafdd0fa25b6147b7eed17f#4d45bbfe8eb82a673eafdd0fa25b6147b7eed17f" }
 dependencies = [
     { name = "click" },
     { name = "dateparser" },
@@ -1616,7 +1616,7 @@ wheels = [
 
 [[package]]
 name = "statement-sensei"
-version = "0.9.8rc1"
+version = "0.9.8rc2"
 source = { editable = "." }
 dependencies = [
     { name = "monopoly-core" },
@@ -1643,7 +1643,7 @@ dev = [
 
 [package.metadata]
 requires-dist = [
-    { name = "monopoly-core", git = "https://github.com/benjamin-awd/monopoly?branch=add-posb-historical" },
+    { name = "monopoly-core", git = "https://github.com/benjamin-awd/monopoly?rev=4d45bbfe8eb82a673eafdd0fa25b6147b7eed17f" },
     { name = "ocrmypdf", marker = "extra == 'ocr'", specifier = ">=16.10.2" },
     { name = "pdftotext", specifier = ">=3.0.0" },
     { name = "plotly", specifier = ">=6.1.2" },
