@@ -68,7 +68,7 @@ jobs:
 
       - name: Setup brew (mac)
         if: matrix.os-target.os == 'macos-latest'
-        uses: Homebrew/actions/setup-homebrew@main
+        uses: Homebrew/actions/setup-homebrew@master
 
       - name: Install pdftotext dependencies (mac)
         if: matrix.os-target.os == 'macos-latest'
@@ -166,7 +166,6 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           path: ./artifacts
-          pattern: statementsensei-*
           merge-multiple: true
 
       - name: Attach the bundles to the GitHub release
