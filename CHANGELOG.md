@@ -1,5 +1,63 @@
 # Changelog
 
+## [0.10.14](https://github.com/benjaminawd-dev/StatementSensei/compare/v0.10.13...v0.10.14) (2026-11-28)
+
+
+### Features
+
+* **webapp:** add a StatementSensei badge and have the smoke test read badge alt text ([b32a7f7](https://github.com/benjaminawd-dev/StatementSensei/commit/b32a7f73fa421cbc00ec415f5962fd146dca7b75))
+* **webapp:** show the monopoly version and link on the About page ([8c5f2d4](https://github.com/benjaminawd-dev/StatementSensei/commit/8c5f2d4da04be918079b8b1505e07d1b1f4a3bca))
+* **webapp:** split the About page into Supported banks, FAQ and Contact tabs ([6d7ffce](https://github.com/benjaminawd-dev/StatementSensei/commit/6d7ffce460a922b22dd84f96a09bfe676c7050c6))
+
+
+### Bug Fixes
+
+* **ci:** also check app page loads in healthcheck ([c0c9ef3](https://github.com/benjaminawd-dev/StatementSensei/commit/c0c9ef3f447fbdd939f8a0934d147ca554d8fb7e))
+* **ci:** show full error text on healthcheck failure ([535deeb](https://github.com/benjaminawd-dev/StatementSensei/commit/535deebf78aea616e2d0c88443e26528777f913e))
+* **ci:** use Playwright to detect app errors in healthcheck ([f75a338](https://github.com/benjaminawd-dev/StatementSensei/commit/f75a338510fd6c7bae466822b4fcb17193f10f1d))
+* **hooks:** read the version with uv and run the requirements hook under bash ([d4fd7ad](https://github.com/benjaminawd-dev/StatementSensei/commit/d4fd7ad4f9f2cf23f2b95ddb4aa44e8fe1ab8eec))
+* remove sources.list causing apt failure on Streamlit Cloud ([29cce11](https://github.com/benjaminawd-dev/StatementSensei/commit/29cce1188d631e198e23f5829f3dbcef246e726e))
+* replace pybadges with inline SVG badges ([1a399f0](https://github.com/benjaminawd-dev/StatementSensei/commit/1a399f0dd2e82512567a7e596aa1fe58a3cad795))
+* **tauri:** move to stable tauri 2 to resolve mismatched tauri-utils in lockfile ([a9b8777](https://github.com/benjaminawd-dev/StatementSensei/commit/a9b87772ae4eab5438012c9ffa45af4ef0149193))
+* **tauri:** pin tauri-runtime to 2.9.2 to match tauri-runtime-wry 2.9.3 ([cb185fc](https://github.com/benjaminawd-dev/StatementSensei/commit/cb185fcb17e8b253dea547cb5fc66f36f3f3b88f))
+* **tauri:** use core: prefix for Tauri 2 capability permissions ([e6d8b85](https://github.com/benjaminawd-dev/StatementSensei/commit/e6d8b8557dcb912033df61784fb4d8062cfadb3c))
+* **webapp:** drop custom theme so the light/dark switcher is available ([aed5d28](https://github.com/benjaminawd-dev/StatementSensei/commit/aed5d28def40df289bb73db7ebdbde23bc621ed0))
+* **webapp:** keep parse warnings across reruns and tidy Streamlit usage ([7c741a4](https://github.com/benjaminawd-dev/StatementSensei/commit/7c741a45be40f0ca3e31e150d299003910a1bf0f))
+
+
+### Code Refactoring
+
+* **webapp:** drop the Usage section from the About page ([d56155d](https://github.com/benjaminawd-dev/StatementSensei/commit/d56155d554dfdd3b608196e21acf2127540a6a2f))
+* **webapp:** link the monopoly badge directly to the repo ([e92a111](https://github.com/benjaminawd-dev/StatementSensei/commit/e92a11126e119a15bea1549a8d5691a9ba0b2681))
+* **webapp:** move the monopoly badge to the bottom of the About page ([77154c2](https://github.com/benjaminawd-dev/StatementSensei/commit/77154c2cffff7ce3c7c2fcda99a50f56b6211d65))
+* **webapp:** put the FAQ tab first on the About page ([4833fff](https://github.com/benjaminawd-dev/StatementSensei/commit/4833fffb8cb4afc2b8175564f79bc3057f8c93d8))
+* **webapp:** show the monopoly badge under the app version ([7887a02](https://github.com/benjaminawd-dev/StatementSensei/commit/7887a020f2d94fca44e5a763eb4e35a8cc1a4311))
+
+
+### Documentation
+
+* add DEV.md describing the dev fork ([d838034](https://github.com/benjaminawd-dev/StatementSensei/commit/d838034691e27a9ae01f418a25f6d5b11aa50b9f))
+* **webapp:** explain monopoly in the About FAQ ([c3ca9b2](https://github.com/benjaminawd-dev/StatementSensei/commit/c3ca9b20f4fdf269d8f5816dc543b8a70fd147bd))
+* **webapp:** trim the monopoly FAQ entry ([c38d3cf](https://github.com/benjaminawd-dev/StatementSensei/commit/c38d3cf07f37acdd473de4df0de9ed149cc78a97))
+
+
+### Build System
+
+* **deps:** bump monopoly-core to 0.23.1 ([0cb0e85](https://github.com/benjaminawd-dev/StatementSensei/commit/0cb0e858a28ae59a4d99b4955424a13706e5c57c))
+* **deps:** bump rustls ([c3dd460](https://github.com/benjaminawd-dev/StatementSensei/commit/c3dd460e054ac0ac48b97a199ff3302adcc78be7))
+* **deps:** bump serde_with ([08f58c1](https://github.com/benjaminawd-dev/StatementSensei/commit/08f58c1f5e7d887647ccd4960c25cf01955e42cc))
+* **deps:** bump the cargo group across 1 directory with 10 updates ([be2302e](https://github.com/benjaminawd-dev/StatementSensei/commit/be2302e4eda7dee2764708ab0a4086086d8fd7ea))
+* **deps:** bump the npm_and_yarn group across 1 directory with 7 updates ([de63c41](https://github.com/benjaminawd-dev/StatementSensei/commit/de63c41c5c3aba091bfaa45c4b120b4640e32118))
+* **deps:** update dependency monopoly-core to v0.23.4 ([524b814](https://github.com/benjaminawd-dev/StatementSensei/commit/524b814aad86e65e551ecde27905e7c2974060ba))
+* **deps:** update dependency monopoly-core to v0.23.5 ([85c11f6](https://github.com/benjaminawd-dev/StatementSensei/commit/85c11f635bc718a008ab6bc9009146e9876afbd2))
+* **deps:** update dependency monopoly-core to v0.23.6 ([6e49f0d](https://github.com/benjaminawd-dev/StatementSensei/commit/6e49f0dcf8b48cf55784bb0302f361ff982befe1))
+* **deps:** update dependency monopoly-core to v0.23.7 ([1eea3db](https://github.com/benjaminawd-dev/StatementSensei/commit/1eea3db949d2dd368d473776ea6e1ca38b4f193b))
+* **deps:** update dependency monopoly-core to v0.23.8 ([4a58de7](https://github.com/benjaminawd-dev/StatementSensei/commit/4a58de7521bbdef95dfd39a833b1701cba091ecb))
+* install git in the Docker builder for pybadges ([71e8703](https://github.com/benjaminawd-dev/StatementSensei/commit/71e8703f816fadbfe8484388f3717ff4209d38c4))
+* point uv at the venv with VIRTUAL_ENV ([aeaa4a5](https://github.com/benjaminawd-dev/StatementSensei/commit/aeaa4a5035f779e69c4a02e0688c156b7e83107d))
+* require Python 3.11 or newer ([d961b5f](https://github.com/benjaminawd-dev/StatementSensei/commit/d961b5f404c43ea2c20e887624178ce6d815796e))
+* slim the Docker image and drop the committed sdist from requirements ([f190618](https://github.com/benjaminawd-dev/StatementSensei/commit/f190618574f02b75a71decbe8a49404842ca94da))
+
 ## [0.10.13](https://github.com/benjamin-awd/StatementSensei/compare/v0.10.12...v0.10.13) (2026-11-22)
 
 
